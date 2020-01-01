@@ -1,0 +1,56 @@
+respawn = 3;
+respawndelay = 5;
+respawnButton = 1;
+disabledAI = true;
+
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+unsafeCVL = 1;
+
+briefingName = "KP_Liberation_Idlib_SAA";
+overviewText = "We should First unite against Terrorism. That is logical and self-evident";
+overviewPicture = "SAA.jpg";
+author = "Pixie, [GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
+onLoadName = "KP_Liberation_Idlib_SAA";
+onLoadMission = "We should First unite against Terrorism. That is logical and self-evident";
+loadScreen = "SAA.jpg";
+
+joinUnassigned = 1;
+
+corpseManagerMode = 1;
+corpseLimit = 90;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 1;
+wreckLimit = 20;
+wreckRemovalMinTime = 1200;
+wreckRemovalMaxTime = 7200;
+minPlayerDistance = 1000;
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};
+
+class CfgMusic
+{
+	class GSB
+	{
+		// display name
+		name	= "godsyriabashar";
+
+		// filename, volume, pitch
+		sound[]	= { "GodSyriaBashar.ogg", db + 10, 1.0 };
+	};
+};
